@@ -80,3 +80,5 @@
 2025-04-08 15:45:17,243 [INFO] org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [main] Global AuthenticationManager configured with UserDetailsService bean with name accountService
 2025-04-08 15:45:17,805 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port 8081 (http) with context path '/'
 2025-04-08 15:45:17,811 [INFO] org.meghana.OnboardingAndAssetsMgmt.SpringRestdemoApplication [main] Started SpringRestdemoApplication in 2.391 seconds (process running for 2.595)
+2025-04-08 15:47:26,999 [INFO] org.springframework.boot.web.embedded.tomcat.GracefulShutdown [SpringApplicationShutdownHook] Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-08 15:47:27,007 [INFO] org.springframework.boot.web.embedded.tomcat.GracefulShutdown [tomcat-shutdown] Graceful shutdown complete
