@@ -6,6 +6,7 @@ import io.swagger.v3.oas.annotations.security.SecurityScheme;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+// This is the main class for the Spring Boot application. It contains the main method which is the entry point of the application.
 @SpringBootApplication
 @SecurityScheme(name = "onboarding-service", scheme = "bearer", type = SecuritySchemeType.HTTP, in = SecuritySchemeIn.HEADER)
 public class SpringRestdemoApplication {
