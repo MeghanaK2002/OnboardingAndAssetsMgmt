@@ -47,7 +47,6 @@ public class AuthController {
     @ResponseStatus(HttpStatus.OK)
     public ResponseEntity<TokenDTO> token(@Valid @RequestBody UserLoginDTO userLogin) throws AuthenticationException {
         try {
-//            log.info("here");
             Authentication authentication = authenticationManager
                     .authenticate(
                             new UsernamePasswordAuthenticationToken(userLogin.getEmail(), userLogin.getPassword()));
@@ -81,7 +80,7 @@ public class AuthController {
             account.setEmail(accountDTO.getEmail());
             account.setPassword(accountDTO.getPassword());
             accountService.save(account);
-            return ResponseEntity.ok("Account registration pending approval. Please wait for administrator approval.");
+            return ResponseEntity.ok("Account registration successful. Please wait for administrator approval.");
 
         } catch (Exception e) {
             log.debug(AccountError.ADD_ACCOUNT_ERROR.toString() + ": " + e.getMessage());
