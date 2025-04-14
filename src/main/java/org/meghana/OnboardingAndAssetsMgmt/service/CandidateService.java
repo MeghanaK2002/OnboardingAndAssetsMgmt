@@ -8,6 +8,8 @@ import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
+import java.util.List;
+import java.util.Optional;
 
 @Service
 public class CandidateService {
@@ -23,6 +25,19 @@ public class CandidateService {
         candidateToBeCreated.setProfileCreatedBy(authentication.getName());
         candidateRepository.save(candidateToBeCreated);
         return "Candidature created successfully with User ID: " + generatedUserId;
+    }
+
+    public List<Candidate> getAllCandidates() {
+        return candidateRepository.findAll();
+    }
+
+    public Optional<Candidate> getCandidateByUserId(String userId) {
+        return candidateRepository.findByUserId(userId);
+    }
+
+    public String deleteCandidateByUserId(String userId) {
+        candidateRepository.deleteByUserId(userId);
+        return "Candidate with user id = "+userId+" deleted successfully.";
     }
 
     private String generateUniqueUserId(String firstName, String lastName){
