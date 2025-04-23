@@ -7,7 +7,7 @@ import org.meghana.OnboardingAndAssetsMgmt.model.Candidate;
 import org.meghana.OnboardingAndAssetsMgmt.payload.candidate.BulkUpdateCandidateDTO;
 import org.meghana.OnboardingAndAssetsMgmt.payload.candidate.CreateCandidateDTO;
 import org.meghana.OnboardingAndAssetsMgmt.payload.candidate.UpdateCandidateDTO;
-import org.meghana.OnboardingAndAssetsMgmt.payload.response.ApiResponseDTO; // Import the new DTO
+import org.meghana.OnboardingAndAssetsMgmt.payload.response.ApiResponseDTO;
 import org.meghana.OnboardingAndAssetsMgmt.service.CandidateService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

@@ -33,7 +33,7 @@ public class CandidateService {
         if (candidateRepository.findByEmail(createCandidateDTO.getEmail()).isPresent()) {
             throw new IllegalArgumentException("A candidate with the provided email already exists.");
         }
-        if (candidateRepository.findByPhoneNumber(createCandidateDTO.getPhoneNo()).isPresent()) {
+        if (candidateRepository.findByPhoneNo(createCandidateDTO.getPhoneNo()).isPresent()) {
             throw new IllegalArgumentException("A candidate with the provided phone number already exists.");
         }
         Candidate candidateToBeCreated = createCandidateDTO.toEntity();
